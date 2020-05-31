@@ -5,6 +5,6 @@ This the Backend app used for MozBantu, In this app i used a graph database to s
 ⋅⋅* #Spring Boot
 ⋅⋅* # Graph database 
 ⋅⋅* #Neo4j
-⋅⋅* Unordered sub-list. 
+⋅⋅*Unordered sub-list. 
 
 
