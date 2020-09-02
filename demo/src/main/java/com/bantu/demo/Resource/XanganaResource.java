@@ -6,6 +6,7 @@ import com.bantu.demo.service.EmakuaService;
 import com.bantu.demo.service.XanganaService;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -15,6 +16,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping(value = "/api")
+@CrossOrigin(origins = "*")
+
 public class XanganaResource {
     
      @Autowired

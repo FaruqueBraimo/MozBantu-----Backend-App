@@ -9,6 +9,7 @@ import com.bantu.demo.model.Word;
 import com.bantu.demo.service.WordService;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -21,6 +22,8 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 @RequestMapping(value = "/api")
+@CrossOrigin(origins = "*")
+
 public class WordResource {
       private Word word ;
 
@@ -32,6 +35,7 @@ public class WordResource {
     {
     return "API funcionando..." ;
     } 
+    
     
     @GetMapping("/words")
     public List<Word> getAllWords(){
